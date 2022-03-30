@@ -1,0 +1,14 @@
+@media (max-width: 48rem) {
+  #main-header nav {
+    display: none;
+  }
+  main h1 {
+    font-size: 2rem;
+  }
+  #latest-products ul {
+    grid-template-columns: 1fr;
+  }
+  .menu-button {
+    display: flex;
+  }
+}

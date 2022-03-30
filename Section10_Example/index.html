@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <header><h1>Contact Us</h1></header>
+    <main>
+      <form action="/user-data" method="">
+        <section>
+          <h2>How can we help you?</h2>
+          <ul>
+            <li>
+              <label for="username">Your Name</label>
+              <input type="text" name="username" id="username" required />
+            </li>
+            <li>
+              <label for="email">Your E-Mail Address</label>
+              <input type="email" name="email" id="email" required />
+            </li>
+            <li>
+              <label for="phonenumber">Your Phone Number</label>
+              <input type="tel" name="phonenumber" id="phonenumber" required />
+            </li>
+            <li>
+              <label for="message">Your Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="3"
+              ></textarea>
+            </li>
+            <li>
+              <label for="found">How did you found us?</label>
+              <select name="found" id="found">
+                <option value="search">Web Search</option>
+                <option value="friend">Friend</option>
+                <option value="ads">Ads</option>
+              </select>
+            </li>
+          </ul>
+        </section>
+        <section class="reply-methods">
+          <h2>How should we reply?</h2>
+          <ul>
+            <li>
+              <input type="radio" name="reply" id="reply-call" />Call message
+            </li>
+            <li>
+              <input type="radio" name="reply" id="reply-email" />Send me an
+              email
+            </li>
+            <li>
+              <input type="radio" name="reply" id="reply-none" />Don't reply
+            </li>
+          </ul>
+        </section>
+        <section>
+          <input type="checkbox" name="accept-terms" id="accept-terms" />
+          <label for="accept-terms">Accept Terms</label>
+        </section>
+        <section class="form-actions">
+          <button type="reset">Clear</button>
+          <button type="submit">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

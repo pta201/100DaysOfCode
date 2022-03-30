@@ -1,0 +1,75 @@
+:root {
+  --color-primary-400: rgb(125, 125, 125);
+  --color-primary-600: rgb(80, 80, 80);
+  --color-primary-900: rgb(31, 31, 31);
+}
+body {
+  font-family: Sans-serif;
+  background-color: rgb(183, 232, 252);
+}
+header h1 {
+  text-align: center;
+}
+form {
+  width: 600px;
+
+  padding: 2rem 1rem;
+  margin: 2rem auto;
+
+  background-color: #fff;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+form ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+form ul li {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+form ul li h2 {
+  color: var(--color-primary-900);
+}
+form ul li label {
+  color: var(--color-primary-600);
+}
+form ul li input {
+  color: var(--color-primary-600);
+  padding: 0.5rem;
+  outline: none;
+  border: 0.5px solid var(--color-primary-400);
+  border-radius: 4px;
+}
+form ul li select {
+  color: var(--color-primary-900);
+  padding: 0.5rem;
+  outline: none;
+  border: 0.5px solid var(--color-primary-400);
+  border-radius: 4px;
+}
+
+.reply-methods {
+  margin: 1rem 0;
+}
+.reply-methods li {
+  display: flex;
+  flex-direction: row;
+}
+.form-actions {
+  text-align: right;
+}
+.form-actions button {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: 0.5px solid var(--color-primary-400);
+}
+.form-actions button[type="reset"] {
+  background-color: #fff;
+}
+.form-actions button[type="submit"] {
+  background-color: rgb(0, 23, 87);
+  color: white;
+}
