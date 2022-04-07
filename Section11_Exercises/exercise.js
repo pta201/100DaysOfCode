@@ -26,7 +26,7 @@ let grouped = {
   goals: [
     "Learning Front-end web development",
     "Try out fullstack",
-    "Make a demo",
+    "Make demos",
   ],
 };
 // 4) Also output the second element in your "main goals" variable
